@@ -19,7 +19,11 @@
       <% if @events_by_date[date] %>
         <ul>
           <% @events_by_date[date].each do |event| %>
+            <% if event.when.hour == 0 %>
+            <span><li><%= link_to "#{event.who}", event %></li></span>
+            <% else %>
             <span><li><%= link_to "#{event.who} at #{event.when.hour}:#{event.when.min}", event %></li></span>
+            <% end %>
           <% end %>
         </ul>
       <% end %>
