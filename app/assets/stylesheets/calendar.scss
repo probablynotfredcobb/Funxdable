@@ -1,0 +1,47 @@
+// Place all the styles related to the Calendar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+div {color: #b52828;}
+li {
+    list-style-type: none;
+}
+
+tr td {height: 120px; width:14.28%; }
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #d27e7e;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #e8bebe;
+}
+
+
+
+// .checkbox { link }
+
+.link {color: #a22424;}
+//
+// #date-background {
+//     background-image:url(https://placehold.it/150x150);
+//     background-position:5px 5px;
+//     background-repeat:no-repeat;
+//     background-size: 0 0;
+//     display:block;
+//     height:100px;
+//     overflow:hidden;
+//     // padding:5px;
+//     // text-indent:100%;
+//     white-space:nowrap;
+//     width:150px;
+//     color: black;
+//
+// }
+//
+// #date-background:hover {
+//     background-color: transparent;
+// }

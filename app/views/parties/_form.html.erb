@@ -1,0 +1,42 @@
+<%= form_for(@party) do |f| %>
+  <% if @party.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@party.errors.count, "error") %> prohibited this party from being saved:</h2>
+
+      <ul>
+      <% @party.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :when %><br>
+    <%= f.datetime_select :when %>
+  </div>
+  <div class="field">
+    <%= f.label :who, "Who is throwing this party?" %><br>
+    <%= f.text_field :who %>
+  </div>
+  <div class="field">
+    <%= f.label :what, "What type of party will this be?" %><br>
+    <%# f.text_field :what %>
+    <%= f.select :what, ['Pool Party', 'Kid\'s Party','F@#$!& RAGER']%>
+  </div>
+  <div class="field">
+    <%= f.label :where, "Where is this party going to be hosted?"%><br>
+    <%= f.text_field :where %>
+  </div>
+  <div class="field">
+    <%= f.label :phone, "Phone number" %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <!-- <div class="field">
+    <%# f.label :cost,  %><br>
+    <%# f.text_field :cost %>
+  </div> -->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
