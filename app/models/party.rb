@@ -4,8 +4,8 @@ class Party < ActiveRecord::Base
   validates :phone, length: {minimum: 10, message: "number needed" }
 
   def cannot_party_in_the_past
-    if :when.present? && :when < Date.today
-      erros.add(:when, "can't be in the past")
+    if self.when.present? && self.when < Date.today
+      errors.add(:when, "can't be in the past")
     end
   end
 
