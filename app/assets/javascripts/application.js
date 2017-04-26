@@ -28,6 +28,12 @@ $(function() {
 });
 
 // $(function() {
+//   $('submit').click(function(){
+//     render html: "<script>alert('No users!')</script>".html_safe
+//   })
+// });
+
+// $(function() {
 //   console.log($('em').attr('id'));
 //
 // })

@@ -22,14 +22,14 @@
   <div class="field">
     <%= f.label :what, "What type of party will this be?" %><br>
     <%# f.text_field :what %>
-    <%= f.select :what, ['Pool Party', 'Kid\'s Party','F@#$!& RAGER']%>
+    <%= f.select :what, ['Pool Party', 'Movie Nights','F@#$!& RAGER','DJ Services']%>
   </div>
   <div class="field">
     <%= f.label :where, "Where is this party going to be hosted?"%><br>
     <%= f.text_field :where %>
   </div>
   <div class="field">
-    <%= f.label :phone, "Phone number" %><br>
+    <%= f.label :phone, "Phone number*" %><br>
     <%= f.text_field :phone %>
   </div>
   <!-- <div class="field">
@@ -38,5 +38,6 @@
   </div> -->
   <div class="actions">
     <%= f.submit %>
+    <!-- <script>alert('No users!')</script> -->
   </div>
 <% end %>

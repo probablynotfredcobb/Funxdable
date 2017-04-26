@@ -13,16 +13,9 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <%# calendar @date do |date| %>
-      <%# date.day %>
-    <%# end %>
+
     <%= calendar @date do |date| %>
-      <%#id="#{date.day}" %>
-        <!-- <em id="28"> -->
           <%= date.day %>
-        <!-- </em> -->
-      <!-- </a> -->
-      <%# raise @events_by_date %>
       <% if @events_by_date[date] %>
         <ul>
           <% @events_by_date[date].each do |event| %>
@@ -33,3 +26,5 @@
     <% end %>
   </div>
 </div>
+
+<iframe src="~/Desktop/wyncode/api" width="300" height="300"></iframe>
